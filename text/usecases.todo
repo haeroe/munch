@@ -1,0 +1,88 @@
+backend:
+    RECIPES
+        Create recipe (incl. cooking steps and portion number)
+        Edit recipe (incl. cooking steps and portion number)
+        Remove recipe (incl. cooking steps and portion number)
+        Read recipe
+        List recipes
+    INGREDIENTS
+        Add ingredients
+        Add ingredient conversion ratios (weight to volume)
+        Handle unit conversion
+        Remove ingredients
+        List ingredients
+    MEAL PLANNING
+        Save plan
+        Edit plan
+        Delete plan
+        List plans
+        Generate shopping list/checklist
+    CALCULATOR
+        Input daily expenditures
+        Save preset
+        Remove preset
+    ADMIN
+        Import ingredients from batch lists
+frontend:
+    RECIPES
+        Create/edit recipe
+        Remove recipe
+        Add ingredient to recipe
+        Search ingredients
+        Remove ingredient from recipe
+        Add cooking steps
+        Edit cooking steps
+        Remove cooking steps
+        Set number of portions as range
+    INGREDIENTS
+        Add ingredients
+        Add ingredient conversion ratios (weight to volume)
+        Remove ingredients
+        Browse ingredients
+    MEAL PLANNING
+        Set number of meals per day as range
+        Plan meals for number of days
+        Compare meal values against calculated expenditure
+        Save plan
+        Edit plan
+        Remove plan
+        Load plan
+        Request shopping list/checklist
+    CALCULATOR
+        Input daily expenditures
+        Save preset
+        Remove preset
+database:
+    recipe
+        recipe name
+        <- ingredient in recipe ->
+        portions, min
+        portions, max
+        is breakfasty
+        is lunchy
+        is snacky
+        is dinnery
+        cooking steps (text)
+    ingredient
+        nutrients per 1000g ->
+        weight volume conversion ->
+    weight volume conversion
+        grams per litre
+    daily expenditures
+        nutrients per day ->
+    nutrients
+        calories
+        carbohydrates
+        fibre
+        protein
+        fat
+    meal plan
+        days
+        <- daily meal plan in meal plan ->
+    meal plan starts
+        start date
+        meal plan ->
+    daily meal plan
+        <- meal in daily plan -> 
+    meal
+        <- recipe in meal (including portion division) ->
