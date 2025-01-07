@@ -1,6 +1,11 @@
 services:
-  munch-backend:
-    build: backend/
-    ports:
-      - "8000:8000"
-    tty: true
+    munch-backend:
+        build: backend/
+        volumes:
+          - type: bind
+            source: backend/src
+            target: /live/src
+            read_only: true
+        ports:
+            - "8000:8000"
+        tty: true

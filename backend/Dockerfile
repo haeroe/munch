@@ -1,7 +1,7 @@
 FROM python:3.9.21-alpine
 WORKDIR /live
 
-COPY src src
+#COPY src src
 COPY requirements.txt requirements.txt
 
 #ENV PYTHONDONTWRITEBYTECODE=1
