@@ -1,0 +1,28 @@
+RECIPES
+    Create recipe
+    Edit recipe
+    Add ingredient to recipe
+    Remove ingredient from recipe
+    Add cooking steps
+    Edit cooking steps
+    Remove cooking steps
+    Set number of portions as range
+INGREDIENTS
+    Add ingredients
+    Add ingredient conversion ratios (weight to volume)
+    Allow unit conversion
+    Remove ingredients
+    Browse ingredients
+MEAL PLANNING
+    Set number of meals per day as range
+    Plan meals for number of days
+    Compare meal values against calculated expenditure
+    Generate shopping list/checklist
+CALCULATOR
+    Input daily expenditures
+    Save presets
+    Remove presets
+ADMIN
+    Import ingredients from batch lists
+AUTH/AUTH
+    No use cases; local-only at this stage
