@@ -9,3 +9,14 @@ services:
         ports:
             - "8000:8000"
         tty: true
+    munch-backend-test:
+        build: test/backend/
+        depends_on:
+            munch-backend:
+                condition: service_started
+        volumes:
+          - type: bind
+            source: test/backend/robot
+            target: /live/robot
+            read_only: true
+        tty: true
