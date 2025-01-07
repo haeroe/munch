@@ -1,0 +1,6 @@
+backend:
+    Django, central meal/ingredient/planning logic
+database:
+    postgres
+frontend:
+    PHP, mainly server-side logic - *potentially* JS framework as well
